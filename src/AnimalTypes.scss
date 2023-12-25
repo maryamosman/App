@@ -1,0 +1,86 @@
+// AnimalTypes.scss
+$primary-color: #d17a07;
+$secondary-color: #32c539;
+$accent-color: #3498db;
+
+.animal-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 100px;
+
+  .animal-type {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 50%; // Adjust the width as needed
+    padding: 80px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__title {
+      font-size: 5em;
+      margin: 20px;
+      text-align: center;
+    }
+
+    &__count {
+      font-weight: bold;
+      margin: 60px;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+
+      button {
+        background-color: $secondary-color;
+        color: #fff;
+        border: none;
+        padding: 20px 40px;
+        gap: 20px;
+        font-size: 3.5em;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($secondary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .all-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 60px;
+
+    button {
+      background-color: $accent-color;
+      color: #fff;
+      border: none;
+      padding: 20px 40px;
+      cursor: pointer;
+      font-size: 4em;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+  }
+}

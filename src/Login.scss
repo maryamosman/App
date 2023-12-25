@@ -1,0 +1,75 @@
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+
+.loginbody {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: $primary-color;
+    font-size: 100px;
+  }
+
+  form {
+    font-size: 80px;
+    width: 30%;
+    margin: 20px auto;
+    background-color: $primary-color;
+    padding: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 100px;
+  }
+
+  input {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 60px;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    background-color: #fff;
+    color: $secondary-color;
+    font-size: 100px;
+  }
+
+  button {
+    width: 30%;
+    padding: 30px;
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100px;
+  }
+
+  button:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+
+  div {
+    margin-top: 60px;
+    font-size: 100px;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
